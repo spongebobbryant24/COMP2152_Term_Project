@@ -8,6 +8,7 @@ import urllib.request
 import urllib.error
 import time
 
+# Verified finding target for backup exposure check
 BASE = "http://backup.0x10.cloud"
 FILES = [
     "/.env.backup",
