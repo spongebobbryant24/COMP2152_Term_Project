@@ -1,0 +1,19 @@
+Video Script 2 — Version Disclosure in Headers
+
+Hello, my name is [Your Name].
+
+The vulnerability I found is version disclosure in HTTP response headers on [target subdomain].
+
+This is a security risk because exposed server or framework details help attackers identify technologies and look up known exploits.
+
+Now I will run my Python script. The script requests the page, reads the headers, and checks whether values like Server or X-Powered-By are exposed.
+
+[Run header_disclosure_check.py and show output]
+
+As shown in the terminal, the script clearly reports the header values and explains the risk.
+
+In the code, I first verify the target is in scope, then I use urllib to request the page and inspect the returned headers. I also used try-except so the script handles connection errors cleanly.
+
+On GitHub, this work was done on my branch named [yourname_header_disclosure], and then merged into master.
+
+Thank you.
